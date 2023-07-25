@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>steam_220789.png</file>
+    <file>internet_2985047.png</file>
+    <file>web-programming_1336593.png</file>
+  </qresource>
+</RCC>
