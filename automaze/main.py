@@ -12,6 +12,11 @@ class Aut(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+        self.web = ['https://github.com/Venchislav',
+                    'https://www.codewars.com/dashboard',
+                    'https://www.youtube.com',
+                    'https://www.youtube.com/watch?v=4xDzrJKXOOY&ab_channel=LofiGirl']
+
         self.ui.code.clicked.connect(self.get_pattern)
         self.ui.browse.clicked.connect(self.get_pattern)
         self.ui.games.clicked.connect(self.get_pattern)
@@ -28,10 +33,6 @@ class Aut(QMainWindow):
         btn = self.sender()
         match btn.objectName():
             case 'code':
-                self.web = ['https://github.com/Venchislav',
-                       'https://www.codewars.com/dashboard',
-                       'https://www.youtube.com',
-                       'https://www.youtube.com/watch?v=4xDzrJKXOOY&ab_channel=LofiGirl']
                 for i in self.web:
                     webbrowser.open(i)
                 os.startfile(r'C:\Program Files\JetBrains\PyCharm Community Edition 2023.1.2\bin\pycharm64.exe')
