@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="box">
+    <file>copy.png</file>
+    <file>unlock.png</file>
+  </qresource>
+</RCC>
